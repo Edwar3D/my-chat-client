@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
     "ngx-cookie-service": "^13.0.1",
+    "nodemon": "^2.0.15",
     "rxjs": "~7.4.0",
     "socket.io-client": "^4.4.0",
     "tslib": "^2.3.0",
@@ -28,7 +29,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.3",
-    "@angular/cli": "~13.0.3",
+    "@angular/cli": "^13.0.3",
     "@angular/compiler-cli": "~13.0.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
