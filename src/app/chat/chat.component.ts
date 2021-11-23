@@ -40,7 +40,6 @@ export class ChatComponent implements OnInit {
           this.isSmallWidth = false
         else
         this.isSmallWidth = true
-        this.socket.receiveMenssages()
   }
 
   @ViewChild('scrollMe')
