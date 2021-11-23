@@ -80,13 +80,16 @@ form label {
     height: 23vh;
   }
 
+  .h1.mb-5.text-center {
+    margin-top:100px;
+  }
   .col-form {
     margin-top: -20vh;
     padding: 0;
   }
 
   .form input {
-    width: 80vw;
+    width: 75vw;
     font-size: large;
   }
 
