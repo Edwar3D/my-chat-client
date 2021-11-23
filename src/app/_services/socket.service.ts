@@ -6,7 +6,7 @@ import { io } from 'socket.io-client';
 })
 export class SocketService {
 
-  io = io("http://127.0.0.1:3000/",  {
+  io = io("https://shrouded-spire-31378.herokuapp.com/",  {
     autoConnect : true,
   })
 

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const API_URL = 'http://localhost:3000/api/';
+const API_URL = 'https://shrouded-spire-31378.herokuapp.com/api/';
 
 @Injectable({
   providedIn: 'root'
