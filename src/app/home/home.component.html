@@ -1,0 +1,13 @@
+ <div class="container-fluid">
+  <div class="row">
+    <!-- chat y perfil -->
+    <div class="" [ngClass]="{'col-2 profile' : !isSmallWidth, 'invisible': isSmallWidth}">
+      <app-profile></app-profile>
+    </div>
+     <!-- chat activo -->
+    <div class="" [ngClass]="{'col-10' : !isSmallWidth, 'container-fluid': isSmallWidth}">
+      <app-chat ></app-chat>
+    </div>
+
+  </div>
+ </div>

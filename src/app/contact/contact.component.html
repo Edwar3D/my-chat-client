@@ -1,0 +1,41 @@
+<div class="contact">
+  <div class="row">
+    <img [src]=dataContact.photo alt="image avatar" class="rounded-circle mx-auto">
+  </div>
+  <div class="info text-center mt-2 ">
+    <p class="name">{{dataContact.username}}</p>
+    <p class="phone">{{dataContact.telephone}}</p>
+  </div>
+
+  <div class="accordion mt-2" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne" (click)="fnExpand()">
+        <h2>
+          <a class="btn-acordion text-muted" type="button" data-toggle="collapse" data-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Datos del Contacto <img class="vector" src="assets/images/Vector.png" alt="" *ngIf="!expand">
+            <img class="vector-inver" src="assets/images/Vector.png"  alt="" *ngIf="expand">
+          </a>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <dl>
+            <dt>Edad</dt>
+            <dd>{{dataContact.old}}</dd>
+            <dt>Correo</dt>
+            <dd>{{dataContact.email}}</dd>
+            <dt>problema</dt>
+            <dd>{{dataContact.problem}}</dd>
+            <dt>Promocion</dt>
+            <dd>{{dataContact.priority}}</dd>
+            <dt>Curp</dt>
+            <dd>{{dataContact.curp}}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

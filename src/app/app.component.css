@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@300;400;700&family=Poppins:wght@500;600;700&display=swap');
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .container-fluid.profile{
+    display:none !important;
+  }
+  .col-2 .profile{
+    display:none !important;
+  }
+}

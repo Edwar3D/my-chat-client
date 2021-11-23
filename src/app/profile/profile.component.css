@@ -1,0 +1,68 @@
+.profile{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0 5px 1px #747171;
+  z-index: 1000;
+}
+
+.rounded-circle{
+  margin-top: 10vh;
+  width: 75px;
+  height: 75px;
+}
+
+.info .name{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 11pt;
+}
+
+.info .phone{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 10pt;
+}
+.chat{
+  background-color: #0099FF0D;
+  height: 100px;
+  margin-right: 0;
+}
+
+.chat img{
+  height: 20px;
+  position: absolute;
+  left: 25pt;
+}
+
+.chat-icon{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.chat-name{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  height: 100%;
+  align-items: center;
+  font-size: 10pt;
+}
+
+.btn{
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  border:none;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .container-fluid.profile{
+    display:none !important;
+  }
+  .col-2 profile{
+    display:none !important;
+  }
+}

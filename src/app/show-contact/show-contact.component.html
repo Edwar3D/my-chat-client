@@ -1,0 +1,48 @@
+<div class="row">
+  <button class="btn btn-outline-secondary mt-1" (click)="goBack()" >
+    <mat-icon >arrow_back</mat-icon>
+  </button>
+
+</div>
+<div class="center-XY">
+<div class="contact">
+
+  <div class="row">
+    <img [src]=dataContact.photo alt="image avatar" class="rounded-circle mx-auto">
+  </div>
+  <div class="info text-center mt-2 ">
+    <p class="name">{{dataContact.username}}</p>
+    <p class="phone">{{dataContact.telephone}}</p>
+  </div>
+
+  <div class="accordion mt-2" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2>
+          <a class="btn-acordion text-muted" type="button"
+            aria-expanded="true" aria-controls="collapseOne">
+            Datos del Contacto
+          </a>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <dl>
+            <dt>Edad</dt>
+            <dd>{{dataContact.old}}</dd>
+            <dt>Correo</dt>
+            <dd>{{dataContact.email}}</dd>
+            <dt>problema</dt>
+            <dd>{{dataContact.problem}}</dd>
+            <dt>Promocion</dt>
+            <dd>{{dataContact.priority}}</dd>
+            <dt>Curp</dt>
+            <dd>{{dataContact.curp}}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

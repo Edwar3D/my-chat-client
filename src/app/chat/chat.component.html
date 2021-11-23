@@ -1,0 +1,58 @@
+<div class="row">
+  <div class=" chat " [ngClass]="{'col-9 container-fliud': flag, 'col-12': !flag}">
+
+    <section class="nav">
+      <img [src]=contact.photo alt="image avatar" (click)="toggleContact()"
+        class="rounded-circle float-right avatar my-auto image img-fluid">
+      <h6 class="my-auto username" (click)="toggleContact()">{{contact.username}}</h6>
+
+
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu" class="btn menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" class="">
+        <button mat-menu-item [routerLink]="['/contact',contact._id]" *ngIf="isSmallWidth">
+          <mat-icon>person</mat-icon>
+          <span>ver contacto</span>
+        </button>
+        <a mat-menu-item (click)="logout()">
+          <mat-icon>logout</mat-icon>
+          <span>logout</span>
+        </a>
+      </mat-menu>
+
+    </section>
+    <section class="conversaciones" #scrollMe [scrollTop]="scrollMe.scrollHeight" >
+
+      <div class="message" *ngFor="let message of iniMessages">
+
+        <div class="d-flex flex-row-reverse" *ngIf="message.user_id == userId">
+          <img class="message-image justify-content-end" [src]="userImage" alt="">
+          <div class="message-text ">
+            <span class="text">{{message.text}}</span>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row" *ngIf="message.user_id != userId">
+          <img class="message-image justify-content-end" [src]=contact.photo alt="">
+          <div class="message-text ">
+            <span class="text">{{message.text}}</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section class="entrada">
+      <form (submit)="sendMessage()" #f="ngForm">
+        <textarea class="form-control" cdkTextareaAutosize placeholder="Escribir mensaje..." [(ngModel)]="msg.text"
+          [ngModelOptions]="{standalone: true}"> </textarea>
+        <button type="submit" class="btn"> <img src="assets/images/send_icon.png"> </button>
+      </form>
+    </section>
+  </div>
+
+  <div class="col-3 mycontact" [ngClass]="{'col-3': flag, 'invisible ': !flag}">
+    <app-contact [dataContact]=contact></app-contact>
+  </div>
+</div>

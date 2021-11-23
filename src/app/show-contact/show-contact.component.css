@@ -1,0 +1,74 @@
+.center-XY {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.rounded-circle{
+  margin-top: 10vh;
+  width: 150px;
+  height: 150px;
+}
+
+.info .name{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 11pt;
+}
+
+.info .phone{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 10pt;
+}
+
+
+.card-header{
+  padding: 0 ;
+  text-align: center;
+}
+
+.btn-acordion{
+  padding: 10px;
+  border: none;
+  font-size: 11pt;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.vector-inver{
+  rotate: 180deg;
+}
+
+dl dt{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #9193A6;
+}
+
+dl dd{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2C2E50;
+}
+
+.row{
+  margin: 0;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .mycontact{
+    visibility:hidden;
+    position: fixed;
+  }
+}
+
+.btn-outline-secondary{
+  border: none;
+  border-radius: 25px;
+  padding-top: 10px;
+}
