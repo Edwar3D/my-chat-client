@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
+#DATOS PARA ACCEDER 
+Usuario1:
+correo:
+micorreo@personal.com
+contraseña:
+userV123
+
+Usuario 2 :
+correo:
+micorreouser2@personal.com
+contraseña:
+userp123
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
